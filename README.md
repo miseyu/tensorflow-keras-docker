@@ -20,7 +20,7 @@ docker build -f Dockerfile -t keras-1 .
 ### Running:
 
 ```bash
-docker run -it keras-1
+docker run -it -d -p 8888:8888 -v /opt/docker/tensorflow-keras/notebooks:/root/notebooks --name tensorflow-keras miseyu/tensorflow-keras-docker
 ```
 
 This will drop you to a bash shell in `/root`. From here you can launch any of
